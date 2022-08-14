@@ -38,7 +38,7 @@ public class CustomerServiceTesting implements CommandLineRunner {
         }
         Print.printCaption("Get all customer details for customer  #4");
 //        customerService.getCustomerDetails(customer_Id).;
-        Customer customer =  customerService.getCustomerDetails(customer_Id);
+        Customer customer =  new Customer();//customerService.getCustomerDetails(customer_Id);
         if (customer != null) {
             Print.printCaption("Get details for customer " + customer.getFirstName() + " #7");
         }
